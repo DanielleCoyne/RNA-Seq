@@ -1,6 +1,8 @@
 # RNA Seq project workflow
+## Experiment Overview
+The overall goal of this project is to investigate how the presence of abscence of thiamine (Vitamin B) affects gene transcription in _Candida albicans ___, an opportunistic fungal pathogen. Three isolates of wild type _C. albicans _ (WTA, WTB, and WTC) were grown under two experimental treatments: in the presence of thiamine (thi+) and in the abscence of thiamine (thi-). Next, RNASeq was used to sequence the transcriptome of each of the isolates under each condition. This generated 6 sets of sequencing data (WTA1, WTA2, WTB1, WTB2, WTC1, and WTC2) labeled 1 for the presence of thiamine (1 = thi+) and 2 for the abscence of thiamine (2 = thi-). Each set of sequencing data generated 2 fasta files for the forward and reverse reads (for example: WTC1_1.fq.gz contains the forward reads for isolate C under thi+ conditions and WTC1_2.fq.gz contains the reverse reads).
 ## Raw data 
-Started working on files WTC1_1.fq.gz (fwr) and WTC1_2.fq.gz (rev)- both for isolate C. 
+I worked on the RNA sequence data for isolate C in the presence of thiamine (WTC1). The raw data files are WTC1_1.fq.gz (fwr) and WTC1_2.fq.gz (rev).
 ## Quality analysis and trimming
 Ran fastqc to evaluate the quality of the reads and looked at results (WTC1_1_fastqc.html and WTC1_2_fastqc.html) to determine optimum trimming setting.
 Trimmed reads according to settings in vartrimmomatic_script.SBATCH.
