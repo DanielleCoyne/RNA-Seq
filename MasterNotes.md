@@ -4,7 +4,7 @@ The overall goal of this project is to investigate how the presence of abscence 
 ## Raw data 
 I worked on the RNA sequence data for isolate C in the presence of thiamine (WTC1). The raw data files are WTC1_1.fq.gz (fwr) and WTC1_2.fq.gz (rev).
 ## Quality analysis and trimming
-I used fastqc software to evaluate the quality of the reads and looked at results (WTC1_1_fastqc.html and WTC1_2_fastqc.html) to determine optimum trimming setting. The number of reads in each fasta file (for forward and reverse reads) was 20752795 before cleaning. 
+I used fastqc software to evaluate the quality of the reads and looked at results (Fastqc/WTC1_1_fastqc.html and WTC1_2_fastqc.html) to determine optimum trimming setting. The number of reads in each fasta file (for forward and reverse reads) was 20752795 before cleaning. 
 Then, I trimmed reads according to settings in vartrimmomatic_script.SBATCH.
 After trimming, I repeated fastqc analysis on the trimmed files to confirm improvements in per-base sequence quality, per-base sequence content, and adapter contamination (WTC1_1.trPE_fastqc.html and WTC1_2.trPE_fastqc.html). The number of reads after trimming was 19924384, indicating that 96% of the reads were retained in the cleaning process. See https://docs.google.com/spreadsheets/d/1AOa-XaTzR_PKMIRQDmu8oDTmawXXnkIwEjKOQkNC7Vs/edit?gid=0#gid=0 for details on the quality analysis and trimming of the other data sets in this project. 
 ## Alignment
