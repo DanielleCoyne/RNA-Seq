@@ -6,9 +6,10 @@ I worked on the RNA sequence data for isolate C in the presence of thiamine (WTC
 ## Quality analysis and trimming
 I used fastqc software to evaluate the quality of the reads and looked at results (Fastqc/WTC1_1_fastqc.html and Fastqc/WTC1_2_fastqc.html) to determine optimum trimming setting. The number of reads in each fasta file (for forward and reverse reads) was 20752795 before cleaning. 
 Then, I trimmed reads according to settings in vartrimmomatic_script.SBATCH.
-After trimming, I repeated fastqc analysis on the trimmed files to confirm improvements in per-base sequence quality, per-base sequence content, and adapter contamination (Fastqc/WTC1_1.trPE_fastqc.html and Fastqc/WTC1_2.trPE_fastqc.html). The number of reads after trimming was 19924384, indicating that 96% of the reads were retained in the cleaning process. See https://docs.google.com/spreadsheets/d/1AOa-XaTzR_PKMIRQDmu8oDTmawXXnkIwEjKOQkNC7Vs/edit?gid=0#gid=0 for details on the quality analysis and trimming of the other files for the other isolates and experimental conditions in this project. 
+After trimming, I repeated fastqc analysis on the trimmed files to confirm improvements in per-base sequence quality, per-base sequence content, and adapter contamination (Fastqc/WTC1_1.trPE_fastqc.html and Fastqc/WTC1_2.trPE_fastqc.html). Fastqc generated files for paired-end (PE) and single-end (SE) reads, and the paired-end reads were used for further analysis. The number of reads after trimming was 19924384, indicating that 96% of the reads were retained in the cleaning process. See https://docs.google.com/spreadsheets/d/1AOa-XaTzR_PKMIRQDmu8oDTmawXXnkIwEjKOQkNC7Vs/edit?gid=0#gid=0 for details on the quality analysis and trimming of the other files for the other isolates and experimental conditions in this project. 
 ## Alignment
-I aligned trimmed reads to reference C. albicans genome (C. albicans genome/GCF_000182965.3_ASM18296v3_genomic.fna.gz from NCBI) using bowtie2. Output: WTC1.sam. Results in z01 file: 19924384 reads; of these:
+I aligned trimmed reads to reference C. albicans genome (C. albicans genome/ GCF_000182965.3_ASM18296v3_genomic.fna.gz from NCBI) using bowtie2. This generated the output file WTC1.sam. 
+The results of the alignment as summarized in the z01 file: 19924384 reads; of these:
   19924384 (100.00%) were paired; of these:
     936104 (4.70%) aligned concordantly 0 times
     17783228 (89.25%) aligned concordantly exactly 1 time
@@ -23,4 +24,6 @@ I aligned trimmed reads to reference C. albicans genome (C. albicans genome/GCF_
         414129 (35.05%) aligned exactly 1 time
         48877 (4.14%) aligned >1 times
 98.20% overall alignment rate.
-Used samtools to convert the mapped reads from a .sam file to a sorted .bam file. 
+The alignment rates and further details about the alignment results for the other files in this experiment are summarized in https://docs.google.com/spreadsheets/d/1fa-FXVMlCXOZkbHSx_mMg0OXLMy9BeBJg8uWrEMpKGo/edit?usp=sharing. 
+## Sorting and Indexing
+I used samtools to convert the mapped reads from a .sam file (sequence aligntment map) to a sorted and indexed .bam file. The file was sorted according to the default coordinate (the leftmost coordinate). Then, the file was indexed to generate the file WTC1.srt.bam.bai. 
