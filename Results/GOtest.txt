@@ -1,0 +1,49 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20240807)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.5281/zenodo.12173881 Released 2024-06-17
+Analyzed List:	Client Text Box Input (Candida albicans)
+Reference List:	Candida albicans (all genes in database)
+Test Type:	FISHER
+Correction:	FDR
+GO biological process complete	Candida albicans - REFLIST (6035)	Client Text Box Input (13)	Client Text Box Input (expected)	Client Text Box Input (over/under)	Client Text Box Input (fold Enrichment)	Client Text Box Input (raw P-value)	Client Text Box Input (FDR)
+thiamine biosynthetic process (GO:0009228)	5	4	.01	+	 > 100	6.47E-11	1.11E-07
+thiamine metabolic process (GO:0006772)	6	4	.01	+	 > 100	1.94E-10	1.67E-07
+thiamine-containing compound biosynthetic process (GO:0042724)	6	4	.01	+	 > 100	1.94E-10	1.43E-07
+thiamine-containing compound metabolic process (GO:0042723)	6	4	.01	+	 > 100	1.94E-10	1.25E-07
+primary alcohol biosynthetic process (GO:0034309)	6	4	.01	+	 > 100	1.94E-10	1.11E-07
+pyridoxine biosynthetic process (GO:0008615)	4	2	.01	+	 > 100	2.56E-05	6.02E-03
+pyridoxine metabolic process (GO:0008614)	4	2	.01	+	 > 100	2.56E-05	5.76E-03
+pyridoxal phosphate biosynthetic process (GO:0042823)	5	2	.01	+	 > 100	4.27E-05	9.19E-03
+pyridoxal phosphate metabolic process (GO:0042822)	5	2	.01	+	 > 100	4.27E-05	8.83E-03
+aldehyde biosynthetic process (GO:0046184)	7	2	.02	+	 > 100	8.94E-05	1.78E-02
+primary alcohol metabolic process (GO:0034308)	15	4	.03	+	 > 100	1.74E-08	6.01E-06
+vitamin B6 biosynthetic process (GO:0042819)	8	2	.02	+	 > 100	1.19E-04	2.28E-02
+vitamin B6 metabolic process (GO:0042816)	9	2	.02	+	 > 100	1.53E-04	2.82E-02
+vitamin biosynthetic process (GO:0009110)	40	6	.09	+	69.63	9.51E-11	1.23E-07
+water-soluble vitamin biosynthetic process (GO:0042364)	40	6	.09	+	69.63	9.51E-11	9.83E-08
+pyrimidine-containing compound biosynthetic process (GO:0072528)	30	4	.06	+	61.90	3.44E-07	9.88E-05
+water-soluble vitamin metabolic process (GO:0006767)	46	6	.10	+	60.55	2.31E-10	1.19E-07
+vitamin metabolic process (GO:0006766)	46	6	.10	+	60.55	2.31E-10	1.08E-07
+pyrimidine-containing compound metabolic process (GO:0072527)	33	4	.07	+	56.27	5.12E-07	1.39E-04
+sulfur compound biosynthetic process (GO:0044272)	57	5	.12	+	40.72	7.64E-08	2.47E-05
+organic hydroxy compound biosynthetic process (GO:1901617)	211	10	.45	+	22.00	5.77E-13	2.98E-09
+sulfur compound metabolic process (GO:0006790)	106	5	.23	+	21.90	1.75E-06	4.31E-04
+alcohol biosynthetic process (GO:0046165)	199	8	.43	+	18.66	1.36E-09	5.40E-07
+organic hydroxy compound metabolic process (GO:1901615)	276	10	.59	+	16.82	8.65E-12	2.24E-08
+alcohol metabolic process (GO:0006066)	244	8	.53	+	15.22	6.89E-09	2.54E-06
+small molecule biosynthetic process (GO:0044283)	396	10	.85	+	11.72	3.18E-10	1.37E-07
+ergosterol biosynthetic process (GO:0006696)	165	4	.36	+	11.25	3.18E-04	5.47E-02
+phytosteroid biosynthetic process (GO:0016129)	165	4	.36	+	11.25	3.18E-04	5.30E-02
+cellular lipid biosynthetic process (GO:0097384)	165	4	.36	+	11.25	3.18E-04	5.13E-02
+secondary alcohol biosynthetic process (GO:1902653)	167	4	.36	+	11.12	3.33E-04	5.21E-02
+steroid biosynthetic process (GO:0006694)	169	4	.36	+	10.99	3.48E-04	5.29E-02
+phytosteroid metabolic process (GO:0016128)	169	4	.36	+	10.99	3.48E-04	5.14E-02
+sterol biosynthetic process (GO:0016126)	169	4	.36	+	10.99	3.48E-04	5.00E-02
+ergosterol metabolic process (GO:0008204)	169	4	.36	+	10.99	3.48E-04	4.86E-02
+organophosphate biosynthetic process (GO:0090407)	309	5	.67	+	7.51	3.12E-04	5.56E-02
+small molecule metabolic process (GO:0044281)	760	10	1.64	+	6.11	1.90E-07	5.78E-05
+organonitrogen compound biosynthetic process (GO:1901566)	1147	11	2.47	+	4.45	6.00E-07	1.55E-04
