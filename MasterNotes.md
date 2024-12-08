@@ -26,4 +26,6 @@ The results of the alignment as summarized in the z01 file: 19924384 reads; of t
 98.20% overall alignment rate.
 The alignment rates and further details about the alignment results for the other files in this experiment are summarized in https://docs.google.com/spreadsheets/d/1fa-FXVMlCXOZkbHSx_mMg0OXLMy9BeBJg8uWrEMpKGo/edit?usp=sharing. 
 ## Sorting and Indexing
-I used samtools to convert the mapped reads from a .sam file (sequence aligntment map) to a sorted and indexed .bam file. The file was sorted according to the default coordinate (the leftmost coordinate). Then, the file was indexed to generate the file WTC1.srt.bam.bai. 
+I used samtools to convert the mapped reads from the .sam file (sequence aligntment map) to a sorted and indexed .bam file for further analysis. The file was sorted according to the default coordinate (the leftmost coordinate). Then, the file was indexed for fast random access to generate a BAI file (WTC1.srt.bam.bai). 
+## Counting Reads
+I used htseqq -count within the HTSeq python package to count how many reads align to each annotated feature in the GTF file for the *C. albicans* genome. 
