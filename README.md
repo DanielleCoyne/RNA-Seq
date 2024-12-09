@@ -1,5 +1,5 @@
 # RNA-Seq
-This is a repository for the RNA Seq project for the Genomics and Bioinformatics course. It describes the steps taken to analyze RNASeq data under two experimental conditions and determine differntial gene analysis. 
+This is a repository for the RNA Seq project for the Genomics and Bioinformatics course. It describes the steps taken to analyze RNASeq data under two experimental conditions and determine differntial gene expression. 
 ## Scripts
 The folder scripts includes Sbatch scripts used to each step of the analysis.
 ## Results
